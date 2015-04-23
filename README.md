@@ -9,7 +9,7 @@ Some basic samples of [Kotlin](http://kotlinlang.org/) for Android
 
 ### Licencia
 
-[EUPL v1.1](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE)
+[EUPL v1.1](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE.txt)
 
 ```
 Copyright 2015 Irontec SL
