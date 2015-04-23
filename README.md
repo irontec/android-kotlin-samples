@@ -4,8 +4,8 @@ Some basic samples of [Kotlin](http://kotlinlang.org/) for Android
 
 ### Samples
 
-- [HttpUrlConnection + AsyncTask](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE)
-- [ListView + BaseAdapter + Data Object](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE)
+- [HttpUrlConnection + AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/HttpUrlConnection%20%2B%20AsyncTask)
+- [ListView + BaseAdapter + Data Object](https://github.com/irontec/android-kotlin-samples/tree/master/ListView%20%2B%20BaseAdapter%20%2B%20Data%20Object)
 
 ### Licencia
 
