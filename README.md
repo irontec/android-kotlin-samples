@@ -4,12 +4,12 @@ Some basic samples of ([Kotlin](http://kotlinlang.org/)) for Android
 
 ### Samples
 
-- ([HttpUrlConnection + AsyncTask](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE))
-- ([ListView + BaseAdapter + Data Object](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE))
+- [HttpUrlConnection + AsyncTask](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE)
+- [ListView + BaseAdapter + Data Object](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE)
 
 ### Licencia
 
-([EUPL v1.1](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE))
+[EUPL v1.1](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE)
 
 ```
 Copyright 2015 Irontec SL
