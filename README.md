@@ -1,6 +1,6 @@
 # android-kotlin-samples
 
-Some basic samples of ([Kotlin](http://kotlinlang.org/)) for Android
+Some basic samples of [Kotlin](http://kotlinlang.org/) for Android
 
 ### Samples
 
