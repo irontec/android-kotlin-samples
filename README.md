@@ -6,7 +6,8 @@ Some basic samples of [Kotlin](http://kotlinlang.org/) for Android
 
 - [HttpUrlConnection + AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/HttpUrlConnection%20%2B%20AsyncTask)
 - [ListView + BaseAdapter + Data Object](https://github.com/irontec/android-kotlin-samples/tree/master/ListView%20%2B%20BaseAdapter%20%2B%20Data%20Object)
-- [OkHttp + AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/OkHttp%20%2B%20AsyncTask) 
+- [OkHttp + AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/OkHttp%20%2B%20AsyncTask)
+- [Gson deserializers + OkHttp + AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/Gson%20deserializers%20%2B%20OkHttp%20%2B%20AsyncTask)
 
 ### Licencia
 
