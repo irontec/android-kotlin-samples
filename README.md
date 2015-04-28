@@ -1,5 +1,7 @@
 # android-kotlin-samples
 
+![Kotlin](http://upload.wikimedia.org/wikipedia/en/b/b5/Kotlin-logo.png)
+
 Some basic samples of [Kotlin](http://kotlinlang.org/) for Android
 
 ### Samples
