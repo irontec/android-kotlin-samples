@@ -11,7 +11,17 @@ Some basic samples of [Kotlin](http://kotlinlang.org/) for Android
 - [OkHttp + AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/OkHttp%20%2B%20AsyncTask)
 - [Gson deserializers + OkHttp + AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/Gson%20deserializers%20%2B%20OkHttp%20%2B%20AsyncTask)
 
-### Licencia
+### Contribute
+
+If you´ve got any sample you think it should be on the repository, feel free to send us a PR with it. We will check it and merge it :smile:
+
+- Fork it
+- Create your feature branch (git checkout -b my-new-feature)
+- Commit your changes (git commit -am 'Add some feature')
+- Push to the branch (git push origin my-new-feature)
+- Create new Pull Request
+
+### License
 
 [EUPL v1.1](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE.txt)
 
