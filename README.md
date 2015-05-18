@@ -23,6 +23,8 @@ If you´ve got any sample you think it should be on the repository, feel free to
 - Push to the branch (git push origin my-new-feature)
 - Create new Pull Request
 
+Also if you want to see any sample on the repository, feel free to open a issue describing what would you want to see and I´ll try to reproduce and push it.
+
 ### License
 
 [EUPL v1.1](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE.txt)
