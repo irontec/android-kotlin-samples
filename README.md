@@ -1,6 +1,6 @@
 # android-kotlin-samples
 
-![Kotlin](http://upload.wikimedia.org/wikipedia/en/b/b5/Kotlin-logo.png)
+![Kotlin](https://raw.githubusercontent.com/irontec/android-kotlin-samples/master/logo.png)
 
 Some basic samples of [Kotlin](http://kotlinlang.org/) for Android
 
