@@ -1,28 +1,22 @@
 package com.irontec.kotlintest
 
-import android.app.Activity
 import android.os.AsyncTask
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
-import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.irontec.kotlintest.deserializers.WeatherDeserializer
 import com.irontec.kotlintest.models.WeatherObject
 import com.irontec.kotlintest.networking.NetworkClient
-import org.json.JSONObject
+import org.jetbrains.anko.*
 import java.io.BufferedInputStream
 import java.io.BufferedReader
 import java.io.InputStreamReader
-import java.net.HttpURLConnection
-import java.net.URL
-import org.jetbrains.anko.*
 
 
-public class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super<AppCompatActivity>.onCreate(savedInstanceState)
@@ -30,37 +24,43 @@ public class MainActivity : AppCompatActivity() {
         verticalLayout {
             padding = dip(5)
             val mTextView = textView {
-                textSize = 12f
-            }.layoutParams(width = matchParent, height = dip(300))
+                textSize = 16f
+                width = matchParent
+                height = dip(300)
+            }
             button("Retrieve Weather") {
                 textSize = 14f
-                onClick { GetJsonWithOkHttpClient(mTextView).execute() }
-            }.layoutParams(width = matchParent, height = wrapContent)
+                width = matchParent
+                height = wrapContent
+                onClick {
+                    GetJsonWithOkHttpClient(mTextView).execute()
+                }
+            }
         }
 
     }
 
-    open class GetJsonWithOkHttpClient(textView: TextView) : AsyncTask<Void, Void, String>() {
+    open class GetJsonWithOkHttpClient(textView: TextView) : AsyncTask<Unit, Unit, String>() {
 
         val mInnerTextView = textView
 
-        override fun doInBackground(vararg params: Void?): String? {
+        override fun doInBackground(vararg params: Unit?): String? {
             val networkClient = NetworkClient()
             val stream = BufferedInputStream(
                     networkClient.get("https://raw.githubusercontent.com/irontec/android-kotlin-samples/master/common-data/bilbao.json"))
-            return readStream(stream);
+            return readStream(stream)
         }
 
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
 
 
-            val gsonBuilder = GsonBuilder().serializeNulls();
-            gsonBuilder.registerTypeAdapter(javaClass<WeatherObject>(), WeatherDeserializer());
-            val gson = gsonBuilder.create();
-            val weather = gson.fromJson(result, javaClass<WeatherObject>()) as WeatherObject
+            val gsonBuilder = GsonBuilder().serializeNulls().setPrettyPrinting()
+            gsonBuilder.registerTypeAdapter(WeatherObject::class.java, WeatherDeserializer())
+            val gson = gsonBuilder.create()
+            val weather = gson.fromJson(result, WeatherObject::class.java)
 
-            mInnerTextView.setText(weather.toString())
+            mInnerTextView.text = weather.toString()
 
         }
 
@@ -78,7 +78,7 @@ public class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val id = item.getItemId()
+        val id = item.itemId
         if (id == R.id.action_settings) {
             return true
         }
