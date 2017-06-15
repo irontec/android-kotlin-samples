@@ -3,10 +3,10 @@ package com.irontec.kotlintest.models
 /**
  * Created by axier on 24/4/15.
  */
-public class WindObject {
+class WindObject {
 
-    public var speed: Float = 0.0f
-    public var deg: Float = 0.0f
+    var speed: Float = 0.0f
+    var deg: Float = 0.0f
 
     init {
         println(this.toString())
