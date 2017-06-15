@@ -14,23 +14,23 @@ import com.irontec.kotlintest.models.CustomPojo
  */
 open class CustomListAdapter(data: Array<CustomPojo>, context: Context) : BaseAdapter()  {
 
-    var localData = data;
+    val mInflater: LayoutInflater
+    var localData = data
+
+    init {
+        mInflater = LayoutInflater.from(context);
+    }
 
     override fun getCount(): Int {
-        return localData.size()
+        return localData.size
     }
 
     override fun getItem(position: Int): Any {
-        return localData.get(position)
+        return localData[position]
     }
 
     override fun getItemId(position: Int): Long {
         return position.toLong()
-    }
-
-    private val mInflater: LayoutInflater?
-    {
-        mInflater = LayoutInflater.from(context)
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View? {
@@ -38,20 +38,22 @@ open class CustomListAdapter(data: Array<CustomPojo>, context: Context) : BaseAd
         val view: View?
         val vh: ListRowHolder
         if (convertView == null) {
-            view = mInflater?.inflate(R.layout.row_item, parent, false)
+            view = mInflater.inflate(R.layout.row_item, parent, false)
             vh = ListRowHolder(view)
-            view?.setTag(vh)
+            view?.tag = vh
         } else {
             view = convertView
-            vh = view.getTag() as ListRowHolder
+            vh = view.tag as ListRowHolder
         }
-        vh.label.setText(localData.get(index = position).toString())
-        return view;
+        vh.label.text = localData.get(index = position).toString()
+        return view
     }
 
     private class ListRowHolder(row: View?) {
-        public val label: TextView
-        {
+
+        val label: TextView
+
+        init {
             this.label = row?.findViewById(R.id.label) as TextView
         }
     }
