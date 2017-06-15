@@ -24,11 +24,11 @@ class MainActivity : AppCompatActivity() {
         GetWeatherTask(this.text).execute()
     }
 
-    class GetWeatherTask(textView: TextView) : AsyncTask<Void, Void, String>() {
+    class GetWeatherTask(textView: TextView) : AsyncTask<Unit, Unit, String>() {
 
         val innerTextView: TextView? = textView
 
-        override fun doInBackground(vararg params: Void?): String? {
+        override fun doInBackground(vararg params: Unit?): String? {
             val url = URL("https://raw.githubusercontent.com/irontec/android-kotlin-samples/master/common-data/bilbao.json")
             val httpClient = url.openConnection() as HttpURLConnection
             if (httpClient.responseCode == HttpURLConnection.HTTP_OK) {
