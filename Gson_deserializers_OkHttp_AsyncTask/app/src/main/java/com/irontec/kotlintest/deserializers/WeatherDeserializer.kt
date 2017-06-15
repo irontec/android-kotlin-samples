@@ -23,14 +23,14 @@ open class WeatherDeserializer : JsonDeserializer<WeatherObject> {
         val jsonMainObj = jsonObj.getAsJsonObject("main")
         val jsonWindObj = jsonObj.getAsJsonObject("wind")
 
-        wheather.main = jsonWeatherArray.getAsJsonObject().get("main").getAsString()
-        wheather.description = jsonWeatherArray.getAsJsonObject().get("description").getAsString()
-        wheather.temp = jsonMainObj.get("temp").getAsFloat()
-        wheather.temp_Max = jsonMainObj.get("temp_max").getAsFloat()
-        wheather.temp_Min = jsonMainObj.get("temp_min").getAsFloat()
-        wheather.humidity = jsonMainObj.get("humidity").getAsInt()
-        wind.speed = jsonWindObj.get("speed").getAsFloat()
-        wind.deg = jsonWindObj.get("deg").getAsFloat()
+        wheather.main = jsonWeatherArray.asJsonObject.get("main").asString
+        wheather.description = jsonWeatherArray.asJsonObject.get("description").asString
+        wheather.temp = jsonMainObj.get("temp").asFloat
+        wheather.temp_Max = jsonMainObj.get("temp_max").asFloat
+        wheather.temp_Min = jsonMainObj.get("temp_min").asFloat
+        wheather.humidity = jsonMainObj.get("humidity").asInt
+        wind.speed = jsonWindObj.get("speed").asFloat
+        wind.deg = jsonWindObj.get("deg").asFloat
         wheather.wind = wind
 
         return wheather
