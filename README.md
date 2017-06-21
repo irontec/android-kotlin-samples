@@ -13,17 +13,6 @@ Some basic samples of [Kotlin](http://kotlinlang.org/) for Android
 - [Anko simple ui](https://github.com/irontec/android-kotlin-samples/tree/master/Anko_simple_ui)
 - [Anko async api sample](https://github.com/irontec/android-kotlin-samples/tree/master/Anko_asynchronous_tasks)
 
-### Contribute
-
-If you´ve got any sample you think it should be on the repository, feel free to send us a PR with it. We will check it and merge it :smile:
-
-- Fork it
-- Create your feature branch (git checkout -b my-new-feature)
-- Commit your changes (git commit -am 'Add some feature')
-- Push to the branch (git push origin my-new-feature)
-- Create new Pull Request
-
-Also if you want to see any sample on the repository, feel free to open a issue describing what would you want to see and I´ll try to reproduce and push it.
 
 ### License
 
