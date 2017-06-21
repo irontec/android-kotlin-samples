@@ -1,7 +1,6 @@
 ## Contributing
 
-First off, thank you for considering contributing to Active Admin. It's people
-like you that make Active Admin such a great tool.
+First off, thank you for considering contributing to Android Kotlin Examples. 
 
 ### 1. Where do I go from here?
 
