@@ -11,6 +11,7 @@ import com.irontec.kotlintest.deserializers.WeatherDeserializer
 import com.irontec.kotlintest.models.WeatherObject
 import com.irontec.kotlintest.networking.NetworkClient
 import org.jetbrains.anko.*
+import org.jetbrains.anko.sdk25.coroutines.onClick
 import java.io.BufferedInputStream
 import java.io.BufferedReader
 import java.io.InputStreamReader
