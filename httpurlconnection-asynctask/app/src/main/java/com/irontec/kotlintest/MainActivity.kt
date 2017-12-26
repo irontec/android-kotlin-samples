@@ -54,10 +54,6 @@ class MainActivity : AppCompatActivity() {
             return stringBuilder.toString()
         }
 
-        override fun onPreExecute() {
-            super.onPreExecute()
-        }
-
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
 

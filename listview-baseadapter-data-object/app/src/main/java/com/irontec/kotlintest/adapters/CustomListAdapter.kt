@@ -18,7 +18,7 @@ open class CustomListAdapter(data: Array<CustomPojo>, context: Context) : BaseAd
     var localData = data
 
     init {
-        mInflater = LayoutInflater.from(context);
+        mInflater = LayoutInflater.from(context)
     }
 
     override fun getCount(): Int {

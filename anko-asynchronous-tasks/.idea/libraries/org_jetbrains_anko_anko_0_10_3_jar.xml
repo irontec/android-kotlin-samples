@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.jetbrains.anko:anko:0.10.3@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.anko/anko/0.10.3/eafb684e16c25e5b6ec1c95a28f322793875c611/anko-0.10.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.anko/anko/0.10.3/eafb684e16c25e5b6ec1c95a28f322793875c611/anko-0.10.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
