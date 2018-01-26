@@ -6,12 +6,12 @@ Some basic samples of [Kotlin](http://kotlinlang.org/) for Android
 
 ### Samples
 
-- [HttpUrlConnection and AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/HttpUrlConnection%20%2B%20AsyncTask)
-- [ListView with BaseAdapter and Data Object](https://github.com/irontec/android-kotlin-samples/tree/master/ListView%20%2B%20BaseAdapter%20%2B%20Data%20Object)
-- [OkHttp and AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/OkHttp%20%2B%20AsyncTask)
-- [Gson deserializers with OkHttp and AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/Gson%20deserializers%20%2B%20OkHttp%20%2B%20AsyncTask)
-- [Anko simple ui](https://github.com/irontec/android-kotlin-samples/tree/master/Anko_simple_ui)
-- [Anko async api sample](https://github.com/irontec/android-kotlin-samples/tree/master/Anko_asynchronous_tasks)
+- [HttpUrlConnection and AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/httpurlconnection-asynctask)
+- [ListView with BaseAdapter and Data Object](https://github.com/irontec/android-kotlin-samples/tree/master/listview-baseadapter-data-object)
+- [OkHttp and AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/okhttp-asynctask)
+- [Gson deserializers with OkHttp and AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/gson-deserializers-okhttp-asynctask)
+- [Anko simple ui](https://github.com/irontec/android-kotlin-samples/tree/master/anko-simple-ui)
+- [Anko async api sample](https://github.com/irontec/android-kotlin-samples/tree/master/anko-asynchronous-tasks)
 
 
 ### License
