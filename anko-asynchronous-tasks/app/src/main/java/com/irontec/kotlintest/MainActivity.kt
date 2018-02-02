@@ -38,11 +38,11 @@ class MainActivity : AppCompatActivity() {
                         val networkClient = NetworkClient()
                         val stream = BufferedInputStream(
                                 networkClient.get("https://raw.githubusercontent.com/irontec/android-kotlin-samples/master/common-data/bilbao.json"))
-                        val bufferedReader = BufferedReader(InputStreamReader(stream));
+                        val bufferedReader = BufferedReader(InputStreamReader(stream))
                         val stringBuilder = StringBuilder()
                         bufferedReader.forEachLine { stringBuilder.append(it) }
                         val gsonBuilder = GsonBuilder().serializeNulls()
-                        gsonBuilder.registerTypeAdapter(WeatherObject::class.java, WeatherDeserializer());
+                        gsonBuilder.registerTypeAdapter(WeatherObject::class.java, WeatherDeserializer())
                         val gson = gsonBuilder.create()
                         val weather = gson.fromJson(stringBuilder.toString(), WeatherObject::class.java)
 
