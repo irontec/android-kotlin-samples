@@ -14,12 +14,8 @@ import com.irontec.kotlintest.models.CustomPojo
  */
 open class CustomListAdapter(data: Array<CustomPojo>, context: Context) : BaseAdapter()  {
 
-    val mInflater: LayoutInflater
+    val mInflater: LayoutInflater = LayoutInflater.from(context)
     var localData = data
-
-    init {
-        mInflater = LayoutInflater.from(context)
-    }
 
     override fun getCount(): Int {
         return localData.size
