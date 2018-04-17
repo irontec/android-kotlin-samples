@@ -2,6 +2,7 @@ package com.irontec.kotlintest
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import com.irontec.kotlintest.adapters.CustomListAdapter
@@ -19,6 +20,11 @@ class MainActivity : AppCompatActivity() {
         val adapter = CustomListAdapter(data = listdata, context = this)
 
         this.list.adapter = adapter
+
+        this.list.setOnItemClickListener { parent, view, position, id ->
+            val myItem = parent.getItemAtPosition(position) as CustomPojo
+            Log.d("ITEM", "Custom Pojo " + myItem.name)
+        }
     }
 
 
