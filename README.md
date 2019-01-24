@@ -6,12 +6,12 @@ Some basic samples of [Kotlin](http://kotlinlang.org/) for Android
 
 ### Samples
 
-- [HttpUrlConnection and AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/httpurlconnection-asynctask)
-- [ListView with BaseAdapter and Data Object](https://github.com/irontec/android-kotlin-samples/tree/master/listview-baseadapter-data-object)
-- [OkHttp and AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/okhttp-asynctask)
-- [Gson deserializers with OkHttp and AsyncTask](https://github.com/irontec/android-kotlin-samples/tree/master/gson-deserializers-okhttp-asynctask)
-- [Anko simple ui](https://github.com/irontec/android-kotlin-samples/tree/master/anko-simple-ui)
-- [Anko async api sample](https://github.com/irontec/android-kotlin-samples/tree/master/anko-asynchronous-tasks)
+- [HttpUrlConnection and AsyncTask](https://github.com/irontec/android-kotlin-samples/blob/master/KotlinTest/app/src/main/java/com/irontec/examples/kotlintest/HttpUrlConnectionAsyncActivity.kt)
+- [ListView with BaseAdapter and Data Object](https://github.com/irontec/android-kotlin-samples/blob/master/KotlinTest/app/src/main/java/com/irontec/examples/kotlintest/ListviewBaseAdapterDataObjActivity.kt)
+- [OkHttp and AsyncTask](https://github.com/irontec/android-kotlin-samples/blob/master/KotlinTest/app/src/main/java/com/irontec/examples/kotlintest/OkHttpAsyncTaskActivity.kt)
+- [Gson deserializers with OkHttp and AsyncTask](https://github.com/irontec/android-kotlin-samples/blob/master/KotlinTest/app/src/main/java/com/irontec/examples/kotlintest/GsonDeserializerOkhttpAsyncActivity.kt)
+- [Anko simple ui](https://github.com/irontec/android-kotlin-samples/blob/master/KotlinTest/app/src/main/java/com/irontec/examples/kotlintest/AnkoSimpleUiActivity.kt)
+- [Anko async api sample](https://github.com/irontec/android-kotlin-samples/blob/master/KotlinTest/app/src/main/java/com/irontec/examples/kotlintest/AnkoAsyncTaskActivity.kt)
 
 
 ### License
